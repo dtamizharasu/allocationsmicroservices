@@ -29,7 +29,7 @@ public class AllocationService {
             ResponseVoMain responseVoMain = new ResponseVoMain();
             Set<ResponseVoSub> responseVoSubs = new HashSet<>();
             ResponseVoSub result =
-            restTemplate.getForObject("http://localhost:8082/api/project/project/"
+            restTemplate.getForObject("http://Project-Service/api/project/project/"
                             +allocation.getProjectId(),ResponseVoSub.class);
 
             responseVoSubs.add(result);
@@ -49,8 +49,7 @@ public class AllocationService {
         if (!projectIds.isEmpty()) {
             projectIds.forEach(prId ->{
                 ResponseVoSub result = restTemplate
-                        .getForObject("http://localhost:8082/api/project/project/" + prId,
-                                ResponseVoSub.class);
+                        .getForObject("http://Project-Service/api/project/project/" + prId, ResponseVoSub.class);
                 responseVoSubs.add(result);
             });
             responseVoMain.setResponseVoSubs(responseVoSubs);

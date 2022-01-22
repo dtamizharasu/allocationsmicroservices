@@ -28,12 +28,11 @@ public class Swagger2UiConfig {
     private ApiInfo metaInfo() {
 
         ApiInfo apiInfo = new ApiInfo(
-                "Swagger 2 API For Allotment Microservices",
+                "Allotment Microservices APIs",
                 null,
                 "1.0",
                 "Terms of Service",
-                new Contact("Allotment Service", null,
-                        null),
+                "",
                 "Apache License Version 2.0",
                 "https://www.apache.org/licenses/"
         );

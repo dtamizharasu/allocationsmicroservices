@@ -23,7 +23,10 @@ import java.util.Set;
  * 5. Update Allocation Details
  * 6. Delete Allocation Details
  * */
-@Api(value = "Swagger - 2 AllocationController")
+
+// Swagger URL - http://localhost:8083/swagger-ui/
+
+@Api(value = "Allocation", tags = {"Allocation"})
 @RestController
 @RequestMapping("/api/allocation")
 public class AllocationController {
